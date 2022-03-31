@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Livraison de sandwitchs</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Livraison de sandwitchs</h1>
+
+        <br>
+
+        <form action="recap.php" method="post" enctype="multipart/form-data">  
+            <div class="form-group">
+              <label>Entrez votre nom</label>
+              <input type="text" name="nom" class="form-control" id="nom" placeholder="Nom">
+            </div>
+
+            <br>
+            
+            <div class="form-group">
+                <label>Entrez votre prenom</label>
+                <input type="text" name="prenom" class="form-control" id="nom" placeholder="Prénom">
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label>Donnez le nombre de sandwitchs</label>
+                <input type="number" name="nbre" class="form-control" id="prenom" placeholder="Nombre de sandwitchs">
+            </div>
+
+            <br>
+
+            <div class="form-group green-border-focus">
+                <label for="exampleFormControlTextarea5">Adresse</label>
+                <textarea class="form-control" id="exampleFormControlTextarea5" rows="2" name="adresse" placeholder="donner votre adresse"></textarea>
+            </div>
+
+            <br>
+
+            <div class="form-group green-border-focus">
+                <label for="exampleFormControlTextarea5">Choisissez le type de sandwitchs</label>
+                <select class=form-control name="type">
+                    <option value=viande>Viande</option>
+                    <option value=poulet>Poulet</option>
+                    <option value=escalope>Escalope</option>
+                </select>
+            </div>
+
+            </br>
+
+            <div class="form-group green-border-focus">
+                <label for="exampleFormControlTextarea5">Selectionnez les ingredients to add</label>
+                <div class="form-check form-switch">
+                    <input name="add_harissa" value="harissa" type="checkbox">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Harissa</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input name="add_salade" value="salade" type="checkbox">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Salade</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input name="add_mayo" value="mayo" type="checkbox">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Mayo</label>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label>Donnez le cin</label>
+                Select cin to upload
+                <input type="file" name="cin" class="form-control" id="cin">
+            </div>
+
+            <br>
+
+            <input type="submit" class="btn btn-success" value="Validate"></br></br>
+
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
